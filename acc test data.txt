@@ -1,0 +1,84 @@
+4637E9
+STR+G
+AMMO decrease
+4637E9 OPCODE FF 0E
+time between shots(rapid fire)
+4637E4
+DEF OPCODE 890A
+OPCODE = NOP 90
+Recoil
+4637C0 8B 16
+4637C2 8B 52 10
+4637C5 83 C4 0C
+4637C8 53
+4637C9 8D 44 24 28 
+4637CD 50
+4637CE 8D 4C 24 20
+4637D2 51
+4637C3 8B CE
+4637C5 FF D2 
+Automatic
+
+
+PlayerBase address:
+"ac_client.exe"+00109B74
+Health offset F8
+
+Armor address:
+"ac_client.exe"+00109B74
+offset FC
+
+Ammo address:
+"ac_client.exe"+00109B74
+offset 150
+
+EntityBase address:
+"ac_client.exe"+00110D90
+
+offset 18 370 c8 f8 wird nicht benötigt
+
+
+scan for health of enemy example 100 then shot him with a gun search for deg value,better know the demage of the gun and search
+for deg value by example 50. if you find the address do a 5 level pointer scan. after its ready close the game leave cheatengine
+open run the game with the same settings and do the enemy health scanning again. if you find the address copy it and do rescanpointer
+address at the old pointerscan result after that the list shuld have deg.do this again and again.
+
+Teamoffset 32C
+JediJumpOffset:
+1: 69
+2: 70
+
+X-Axe Offset = 40(Float)
+Y-Axe OFfset = 44(Float)
+
+Xposition Offset = 4;
+Zposition Offset = c;
+Yposition Offset = 8; merken für bHop
+
+enemy x position = 4;
+enemy y position = c;
+enemy z posizion = 8;
+Loopdistance = 4bytes;
+
+MapNameAddress = 0x27A54;
+
+ActiveWeapon:
+"ac_client.exe"+0010FC84
+offset 0 28c
+
+Knife ID = 0
+Pistol ID = 1
+Carabine ID = 2
+Shutgun ID = 3
+MP ID = 4
+Sniper ID = 5
+Rifle ID = 6
+Grenade ID = 8
+2xPistols ID = 9
+
+Matrix:
+ac_client.exe+10A414
+mby ac_client.exe+101B14
+
+PlayerNrAtServer:
+ac_client.exe+10F500
